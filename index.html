@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,52 +18,52 @@
 
     <div id="main-div-right">
       <header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas atque nulla pariatur doloremque. Quos est distinctio culpa quisquam.</p>
-        <p>You know</p>
+        <h3>This is not a real online service! You know you need something <br> like this in you life to help you realize your deepest dreams. <br> Sign up <i>now</i> to get started.</h3>
+        <h3>You <i>know</i> you want to.</h3>
       </header>
 
       <main>
         <form action="#">
-          <div id="form-header">You can do it.</div>
-
           <div id="form-main">
+            <h3>Let's do this</h3>
+
             <div class="input-card-container">
               <div class="input-card">
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name">
+                <input type="text" id="first-name" name="first-name" required>
               </div>
               <div class="input-card">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name">
+                <input type="text" id="last-name" name="last-name" required>
               </div>
             </div>
 
             <div class="input-card-container">
               <div class="input-card">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
               </div>
               <div class="input-card">
                 <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" id="phone-number" name="phone-number">
+                <input type="tel" id="phone-number" name="phone-number" required>
               </div>
             </div>
 
             <div class="input-card-container">
               <div class="input-card">
                 <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="password" required>
               </div>
               <div class="input-card">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password" name="confirm-password">
+                <input type="password" id="confirm-password" name="confirm-password" required>
               </div>
             </div>
           </div>
 
           <div id="form-footer">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="#">Log In</a></p>
+            <button id="submit-btn" type="submit">Create Account</button>
+            <p>Already have an account? <a href="#" id="login-link">Log In</a></p>
           </div>
         </form>
       </main>

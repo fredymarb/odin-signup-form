@@ -4,12 +4,20 @@
   --accent-color: #596D48;
 }
 
+@font-face {
+  font-family: norse-bold;
+  src: url(../fonts/Norse-Bold.otf);
+}
+
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #main-div-left {
@@ -17,6 +25,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 35vw;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -25,6 +34,7 @@ body {
 
 #hero-container {
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +50,8 @@ body {
 
 #hero-text {
   color: var(--primary-color);
-  font-size: xx-large;
+  font-size: 3rem;
+  font-family: norse-bold;
 }
 
 #hero-footer {
@@ -54,6 +65,68 @@ a {
   color: var(--primary-color);
 }
 
+input {
+  border: 1px solid #E5E7EB;
+}
+
+input[type="password"]:focus {
+  border: 1px solid green;
+}
+
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
 #main-div-right {
-  
+  width: 65vw;
+}
+
+header {
+  padding-top: 70px;
+  padding-right: 70px;
+  padding-bottom: 10px;
+  padding-left: 5vw;
+}
+
+main {
+  height: 63vh;
+  width: 100%;
+}
+
+#form-main {
+  padding-top: 10px;
+  padding-left: 5vw;
+  background-color: aliceblue;
+  height: 35vh;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.input-card-container {
+  display: flex;
+  gap: 12px;
+}
+
+.input-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+#form-footer {
+  padding-left: 5vw;
+  margin-top: 30px;
+}
+
+button[type="submit"] {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 10px 28px;
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#login-link {
+  color: var(--accent-color);
+  text-decoration: none;
 }
